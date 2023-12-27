@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <!-- navigation links -->
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <!-- unordered_list -->
+                    <!-- li=list item -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/center.png" class="central">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="images/basketball.png" alt="">
+                    <div>
+                        <h2>Basketball</h2>
+                        <p>2023 NBA Winners:</p>
+                        <p> Denver Nuggets</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/chess.png" alt="">
+                    <div>
+                        <h2>Chess</h2>
+                        <p>2023 World Championship Winner:</p>
+                        <p>Ding Liren</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/volleyball.png" alt="">
+                    <div>
+                        <h2>Volleyball</h2>
+                        <p>2023 World Cup Winners:</p>
+                        <p> USA</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/football.png" alt="">
+                    <div>
+                        <h2>Football</h2>
+                        <p>2023 Champions League Winners:</p>
+                        <p> Manchester City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn" alt="">
+            <h3>Rotate</h3>
+            <img src="images/arrow.png" id="downBtn" alt="">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotatesum;
+
+        upBtn.onclick = function () {
+            rotatesum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotateValue = rotatesum;
+        }
+        downBtn.onclick = function () {
+            rotatesum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotatesum;
+            rotateValue = rotatesum;
+        }
+    </script>
+</body>
+
+</html>

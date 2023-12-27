@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #f99010, rgb(216, 152, 40));
+}
+
+nav {
+    width: 90%;
+    position: sticky;
+    margin: 10px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.information {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img {
+    width: 100px;
+}
+
+.feature {
+    position: absolute;
+    display: flex;
+    color: black;
+}
+
+.feature div {
+    margin: 20px;
+}
+
+.one {
+    top: 350px;
+    right: -50px;
+}
+
+.two {
+    top: 0px;
+    /* Adjust as needed */
+    left: 200px;
+    /* Adjust as needed */
+    transform: rotate(-90deg);
+}
+
+.three {
+    top: 350px;
+    /* Adjust as needed */
+    left: -100px;
+    /* Adjust as needed */
+    transform: rotate(-180deg);
+}
+
+.four {
+    bottom: 0;
+    /* Adjust as needed */
+    left: 200px;
+    /* Adjust as needed */
+    transform: rotate(-270deg);
+}
+
+.central {
+    width: 50px;
+    position: absolute;
+    top: 350px;
+    left: 375px;
+}
+
+.controls {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h3 {
+    margin: 15px;
+    color: #ffffff;
+}
+
+#upBtn {
+    width: 15px;
+    cursor: pointer;
+}
+
+#downBtn {
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    border-top: 400px solid black;
+    border-left: 400px solid black;
+    border-bottom: 400px solid black;
+    border-right: 400px solid transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+/* style.css */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 100px;
+    width: 600px;
+    /* Adjust the margin as needed */
+}
+
+h1 {
+    font-family: 'Cursive Font', cursive;
+    /* Replace 'Cursive Font' with your preferred cursive font */
+    color: white;
+}
+
+.lorem-text {
+    font-family: 'Cursive Font', cursive;
+    /* Replace 'Cursive Font' with your preferred cursive font */
+    color: white;
+}
